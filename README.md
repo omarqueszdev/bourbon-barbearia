@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="imagens/bourbon-logo.png" alt="Bourbon Barbearia Logo" width="220px">
+</p>
+
 # 💈 Bourbon Barbearia
 
 > Projeto acadêmico desenvolvido para a matéria de **Desenvolvimento Front-End Para Web** da faculdade.
