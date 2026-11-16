@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bourbon Barbearia | Guarulhos</title>
+    <meta name="description" content="Sua barbearia em Guarulhos. Máquina, tesoura, toalha quente e atendimento com hora marcada.">
+    <link rel="icon" type="image/png" href="imagens/Logo Redondo.png">
+
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================================================
+         CABEÇALHO
+         ================================================ -->
+    <header class="header">
+        <div class="header__inner">
+
+            <a href="#inicio" class="header__logo" aria-label="Bourbon Barbearia — voltar ao início">
+                <img src="imagens/Logo Redondo.png" alt="Bourbon Barbearia">
+            </a>
+
+            <!-- Hambúrguer (visível apenas no mobile) -->
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Abrir menu de navegação"
+                    aria-expanded="false"
+                    aria-controls="nav">
+                <span class="menu-toggle__line" aria-hidden="true"></span>
+                <span class="menu-toggle__line" aria-hidden="true"></span>
+                <span class="menu-toggle__line" aria-hidden="true"></span>
+            </button>
+
+            <nav class="nav" id="nav" aria-label="Navegação principal">
+                <ul class="nav__list">
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Local</a></li>
+                </ul>
+                <a href="#agendamento" class="btn btn--outline">Agendar horário</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- ================================================
+         MAIN
+         ================================================ -->
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" id="inicio" aria-label="Seção de destaque">
+            <img src="imagens/Opacity.jpeg" alt="" class="hero__image" aria-hidden="true">
+            <div class="hero__content">
+                <h1>O que você pedir.<br>
+                    <span class="text-highlight" aria-label="Sem pressa.">
+                        <span class="text-highlight-line" aria-hidden="true"></span>
+                        <em>Sem pressa.</em>
+                    </span>
+                </h1>
+                <p class="hero__sub">Máquina, tesoura, toalha quente e uma cadeira confortável. Com hora marcada no centro de Guarulhos.</p>
+                <div class="hero__actions">
+                    <a href="#agendamento" class="btn">Marcar um horário</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section class="section about-section" id="sobre" aria-labelledby="sobre-titulo">
+            <div class="section__inner">
+                <div class="about-text">
+                    <h2 id="sobre-titulo">Desde 2015, a Bourbon cuida de cada cliente, elevando sua autoestima e transformando cada corte em uma experiência de confiança, estilo e bem estar.</h2>
+                    <h4>Criamos um espaço onde tradição, técnica e cuidado caminham juntos. Aqui, valorizamos o respeito, a qualidade e a atenção aos detalhes!</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços + Agendamento -->
+        <section class="section servicos-section" id="servicos" aria-labelledby="agenda-titulo">
+            <div class="section__inner section__inner--wide">
+                <div class="agenda" id="agendamento">
+
+                    <!-- Topo -->
+                    <header class="agenda__topo">
+                        <div>
+                            <h2 id="agenda-titulo">Agende seu horário</h2>
+                            <span class="traco" aria-hidden="true"></span>
+                        </div>
+                        <div class="atendimento" aria-label="Horário de atendimento: Segunda a Sábado, 9h às 20h">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="13" r="8"/>
+                                <path d="M12 9v4l3 2M9 3h6M12 3v2"/>
+                            </svg>
+                            <p><small>Atendimento</small><strong>SEG – SEX: 09h às 20h
+                            </strong></p>
+                        </div>
+                    </header>
+
+                    <!-- Barra de etapas -->
+                    <ol class="etapas" id="etapas" aria-label="Etapas do agendamento">
+                        <li class="ativa" aria-current="step"><b aria-hidden="true">1</b><p><strong>Dados do Cliente</strong><small>Nome e contato</small></p></li>
+                        <li><b aria-hidden="true">2</b><p><strong>Serviço</strong><small>Escolha o serviço</small></p></li>
+                        <li><b aria-hidden="true">3</b><p><strong>Barbeiro</strong><small>Escolha o profissional</small></p></li>
+                        <li><b aria-hidden="true">4</b><p><strong>Data e Hora</strong><small>Selecione data e horário</small></p></li>
+                        <li><b aria-hidden="true">5</b><p><strong>Confirmação</strong><small>Revise e confirme</small></p></li>
+                    </ol>
+
+                    <!-- Painel -->
+                    <div class="painel" role="region" aria-label="Painel de agendamento">
+
+                        <!-- Coluna 1: Dados do Cliente -->
+                        <div class="coluna" id="col-etapa-1">
+                            <h3>
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="12" cy="8" r="4"/>
+                                    <path d="M4 21c0-4.5 3.5-7 8-7s8 2.5 8 7"/>
+                                </svg>
+                                Seus dados
+                            </h3>
+
+                            <div class="campo">
+                                <label for="cli-nome">Nome completo</label>
+                                <input type="text" id="cli-nome" name="nome" autocomplete="name"
+                                       placeholder="Como devemos te chamar?" maxlength="60">
+                            </div>
+
+                            <div class="campo">
+                                <label for="cli-tel">WhatsApp</label>
+                                <input type="tel" id="cli-tel" name="telefone" autocomplete="tel"
+                                       inputmode="tel" placeholder="(11) 99999-9999" maxlength="15">
+                            </div>
+
+                            <p class="nota">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9"/>
+                                    <path d="M12 11v6M12 7.5v.5"/>
+                                </svg>
+                                Usamos seu contato apenas para confirmar o horário.
+                            </p>
+                        </div>
+
+                        <!-- Coluna 2: Serviço -->
+                        <div class="coluna" id="col-etapa-2">
+                            <h3>
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="6" cy="6" r="3"/>
+                                    <circle cx="6" cy="18" r="3"/>
+                                    <path d="M8.5 8l11 11M8.5 16l11-11"/>
+                                </svg>
+                                Escolha os seus serviços
+                            </h3>
+                            <p class="dica">Você pode escolher mais de um. Ex.: Barba + Sobrancelha.</p>
+
+                            <button class="item ativo" type="button"
+                                    data-servico="Corte de Cabelo" data-preco="50" data-duracao="30"
+                                    aria-pressed="true">
+                                <span>
+                                    <strong>Corte de Cabelo</strong>
+                                    <small>R$ 50,00</small>
+                                </span>
+                                <i class="marca marca--check" aria-hidden="true"></i>
+                            </button>
+
+                            <button class="item" type="button"
+                                    data-servico="Barba" data-preco="40" data-duracao="30"
+                                    aria-pressed="false">
+                                <span>
+                                    <strong>Barba</strong>
+                                    <small>R$ 40,00</small>
+                                </span>
+                                <i class="marca marca--check" aria-hidden="true"></i>
+                            </button>
+
+                            <button class="item" type="button"
+                                    data-servico="Sobrancelha" data-preco="20" data-duracao="15"
+                                    aria-pressed="false">
+                                <span>
+                                    <strong>Sobrancelha</strong>
+                                    <small>R$ 20,00</small>
+                                </span>
+                                <i class="marca marca--check" aria-hidden="true"></i>
+                            </button>
+
+                            <p class="nota">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9"/>
+                                    <path d="M12 11v6M12 7.5v.5"/>
+                                </svg>
+                                Todos os serviços incluem toalha quente e finalização.
+                            </p>
+                        </div>
+
+                        <!-- Coluna 3: Barbeiro -->
+                        <div class="coluna" id="col-etapa-3">
+                            <h3>
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="12" cy="8" r="4"/>
+                                    <path d="M4 21c0-4.5 3.5-7 8-7s8 2.5 8 7"/>
+                                </svg>
+                                Escolha o barbeiro
+                            </h3>
+
+                            <button class="item ativo" type="button"
+                                    data-barbeiro="Lucas Ferreira"
+                                    aria-pressed="true">
+                                <img src="imagens/Lucas.jpeg" alt="Lucas Ferreira">
+                                <span>
+                                    <strong>Lucas Ferreira</strong>
+                                    <small class="nota-b">★ 4.9</small>
+                                </span>
+                                <i class="marca" aria-hidden="true"></i>
+                            </button>
+
+                            <button class="item" type="button"
+                                    data-barbeiro="Gabriel Santos"
+                                    aria-pressed="false">
+                                <img src="imagens/Gabriel.jpeg" alt="Gabriel Santos">
+                                <span>
+                                    <strong>Gabriel Santos</strong>
+                                    <small class="nota-b">★ 4.8</small>
+                                </span>
+                                <i class="marca" aria-hidden="true"></i>
+                            </button>
+
+                            <button class="item" type="button"
+                                    data-barbeiro="Rafael Lima"
+                                    aria-pressed="false">
+                                <img src="imagens/Rafael.jpeg" alt="Rafael Lima">
+                                <span>
+                                    <strong>Rafael Lima</strong>
+                                    <small class="nota-b">★ 4.9</small>
+                                </span>
+                                <i class="marca" aria-hidden="true"></i>
+                            </button>
+
+                            <button class="item" type="button"
+                                    data-barbeiro="Matheus Alves"
+                                    aria-pressed="false">
+                                <img src="imagens/Matheus.jpeg" alt="Matheus Alves">
+                                <span>
+                                    <strong>Matheus Alves</strong>
+                                    <small class="nota-b">★ 4.7</small>
+                                </span>
+                                <i class="marca" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+                        <!-- Coluna 4: Data e Horário -->
+                        <div class="coluna" id="col-etapa-4">
+                            <h3>
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                    <path d="M3 10h18M8 3v4M16 3v4"/>
+                                </svg>
+                                Escolha a data
+                            </h3>
+
+                            <div class="calendario" role="group" aria-label="Calendário para seleção de data">
+                                <div class="cal-topo">
+                                    <button id="mes-ant" type="button" aria-label="Mês anterior">
+                                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+                                    </button>
+                                    <strong id="mes-titulo" aria-live="polite"></strong>
+                                    <button id="mes-prox" type="button" aria-label="Próximo mês">
+                                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+                                    </button>
+                                </div>
+                                <div class="cal-grade semana" aria-hidden="true">
+                                    <span>DOM</span><span>SEG</span><span>TER</span>
+                                    <span>QUA</span><span>QUI</span><span>SEX</span><span>SÁB</span>
+                                </div>
+                                <div class="cal-grade" id="dias" role="grid" aria-label="Dias do mês"></div>
+                            </div>
+
+                            <h4>Escolha o horário</h4>
+                            <div class="horarios" id="horarios" role="group" aria-label="Horários disponíveis"></div>
+                        </div>
+
+                    </div><!-- /painel -->
+
+                    <!-- Etapa 5: Confirmação -->
+                    <section class="confirmacao" id="col-etapa-5" aria-labelledby="conf-titulo">
+                        <div class="confirmacao__dados">
+                            <h3 id="conf-titulo">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h7"/>
+                                </svg>
+                                Resumo do agendamento
+                            </h3>
+
+                            <dl class="resumo-grade">
+                                <div><dt>Cliente</dt><dd id="r-cliente">–</dd></div>
+                                <div><dt>WhatsApp</dt><dd id="r-telefone">–</dd></div>
+                                <div><dt>Serviço</dt><dd id="r-servico"></dd></div>
+                                <div><dt>Barbeiro</dt><dd id="r-barbeiro"></dd></div>
+                                <div><dt>Data</dt><dd id="r-data">–</dd></div>
+                                <div><dt>Horário</dt><dd id="r-horario">–</dd></div>
+                                <div><dt>Duração</dt><dd id="r-duracao"></dd></div>
+                            </dl>
+                        </div>
+
+                        <div class="confirmacao__acao">
+                            <p class="total">
+                                <span>Total</span>
+                                <strong id="r-total"></strong>
+                            </p>
+
+                            <button class="confirmar" id="confirmar" type="button">
+                                Confirmar agendamento
+                            </button>
+
+                            <p class="seguro">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="5" y="11" width="14" height="10" rx="2"/>
+                                    <path d="M8 11V8a4 4 0 018 0v3"/>
+                                </svg>
+                                Seus dados estão seguros conosco.
+                            </p>
+                        </div>
+                    </section>
+
+                </div><!-- /agenda -->
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="section contact-section" id="contato" aria-labelledby="contato-titulo">
+            <div class="section__inner">
+                <div class="contact-grid">
+                    <div>
+                        <h2 id="contato-titulo">Fale com a gente</h2>
+                        <p class="contact-lead">Atendemos apenas com hora marcada para garantir que você não perca tempo esperando.</p>
+                        <a href="https://wa.me/5511978888039" class="btn" target="_blank" rel="noopener noreferrer">
+                            Reservar pelo WhatsApp
+                        </a>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-block">
+                            <h4>Onde estamos</h4>
+                            <p>Rua Exemplo, 123<br>Centro — Guarulhos, SP</p>
+                        </div>
+                        <div class="info-block">
+                            <h4>Horários</h4>
+                            <p>Terça a Sexta: 9h às 20h<br>Sábado: 9h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <img src="imagens/bourbon-logo.png" alt="Bourbon Barbearia" class="footer__logo">
+            <p>&copy; <span id="ano"></span> Bourbon Barbearia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

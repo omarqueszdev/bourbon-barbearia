@@ -1,0 +1,13 @@
+# Mac OS
+.DS_Store
+
+# IDEs / Editor files
+.vscode/
+.claude/
+.agents/
+claudas/
+skills-lock.json
+test.js
+
+# Archives
+*.zip
