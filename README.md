@@ -1,43 +1,37 @@
 # 💈 Bourbon Barbearia
 
-> Projeto desenvolvido para a matéria de **Desenvolvimento Front-End Para Web** da faculdade.
+> Projeto acadêmico desenvolvido para a matéria de **Desenvolvimento Front-End Para Web** da faculdade.
 
-Site institucional e sistema de agendamento online para a **Bourbon Barbearia**, um espaço dedicado ao cuidado masculino localizado em Guarulhos / SP.
+Site institucional e sistema de agendamento online para a **Bourbon Barbearia**, um espaço dedicado ao cuidado masculino em Guarulhos / SP, construído utilizando padrões nativos da web **sem frameworks, sem dependências**.
 
----
+## 🎯 Objetivo
+Criar uma plataforma digital elegante, responsiva e intuitiva para apresentar os serviços da barbearia, destacar a identidade da marca e facilitar o primeiro contato e agendamento dos clientes.
 
-## 🚀 Funcionalidades
+## 🎨 Design & Estilização
+O projeto adota uma identidade visual refinada inspirada em barbearias clássicas com um toque moderno:
+- **Tipografia Elegante:** Uso de fontes tipográficas de destaque (*Cormorant*) combinadas com alta legibilidade (*Inter*).
+- **Paleta Sofisticada:** Tons sóbrios, contraste marcante e atenção minuciosa ao espaçamento e respiro visual.
+- **Responsividade Fluida:** Layout totalmente adaptado para dispositivos móveis, tablets e telas de desktop através de Flexbox e CSS Grid.
 
-- **Design Responsivo:** Adaptado para dispositivos móveis, tablets e desktops.
-- **Menu Mobile Interativo:** Navegação fluida em telas menores com botão hambúrguer.
-- **Seção "Sobre Nós":** Apresentação da barbearia, atmosfera e proposta.
-- **Catálogo de Serviços:** Exibição detalhada de cortes, barba, tratamentos e valores.
-- **Seção de Contato e Localização:** Informações de endereço e mapa.
-- **Sistema de Agendamento:** Interface interativa para marcação de horários.
+## 🚀 Funcionalidades Principais
+- **Navegação Adaptativa:** Menu mobile interativo com botão hambúrguer animado.
+- **Seção Institucional (Sobre Nós):** História, atmosfera e apresentação da equipe.
+- **Catálogo de Serviços:** Exibição detalhada de cortes de cabelo, barba, tratamentos e tabela de valores.
+- **Área de Localização e Contato:** Informações claras de endereço em Guarulhos e pontos de contato.
+- **Sistema de Agendamento:** Interface interativa para marcação de horários com validação.
 
----
+## 💡 Aprendizados e Práticas
+Durante o desenvolvimento, a dupla praticou:
+- Estruturação semântica em HTML5.
+- Estilização avançada com CSS3 (variáveis, flexbox, responsividade com media queries).
+- Programação em JavaScript (ES6+) para manipulação do DOM e interatividade.
+- Organização de controle de versão com Git e publicação via GitHub Pages.
+
+## 🌐 Link do Projeto
+[Acesse o site online](https://omarqueszdev.github.io/bourbon-barbearia/)
 
 ## 🛠️ Tecnologias Utilizadas
-
-- **HTML5:** Estruturação semântica e acessível.
-- **CSS3:** Estilização avançada, Flexbox, Grid e variáveis CSS.
-- **JavaScript (ES6+):** Interatividade, manipulação do DOM e lógica de agendamento.
-- **Google Fonts:** Tipografia personalizada (*Cormorant* e *Inter*).
-
----
-
-## 📂 Estrutura do Projeto
-
-```text
-/
-├── index.html       # Página principal
-├── style.css        # Folha de estilos global
-├── script.js        # Lógica e interatividade em JavaScript
-└── imagens/         # Assets visuais (logotipos, fotos, ícones)
-```
-
----
-
-## 👥 Autores
-
-Desenvolvido em parceria com um colega para a disciplina acadêmica de Front-End.
+- HTML5 (Semântico)
+- CSS3 (Flexbox, Grid, Variáveis)
+- JavaScript (ES6+)
+- Git & GitHub / GitHub Pages
